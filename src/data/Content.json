@@ -1,0 +1,49 @@
+{
+    "sssContent": {
+        "bannerList": [
+            {
+                "id": 1,
+                "icon": "https://cdn1.acedms.com/photos/images/droomCredit/content/reactIcons/loan-approval.png",
+                "text": "Loan Decision In 30 Seconds"
+            },
+            {
+                "id": 2,
+                "icon": "https://cdn1.acedms.com/photos/images/droomCredit/content/reactIcons/fund-provide.png",
+                "text": "Unbeatable Loan Terms"
+            },
+            {
+                "id": 3,
+                "icon": "https://cdn1.acedms.com/photos/images/droomCredit/content/reactIcons/paperless.png",
+                "text": "Hassle Free & Paperlesss"
+            },
+            {
+                "id": 4,
+                "icon": "https://cdn1.acedms.com/photos/images/droomCredit/content/reactIcons/data-science.png",
+                "text": "Real Time Quotes From Multiple Lenders"
+            }
+
+        ],
+        "mainNavigation":[
+            {
+                "id": 1,
+                "icon": "",
+                "text": "Home"
+            },
+            {
+                "id": 2,
+                "icon": "",
+                "text": "About"
+            },
+            {
+                "id": 3,
+                "icon": "",
+                "text": "Services"
+            },
+            {
+                "id": 4,
+                "icon": "",
+                "text": "Contact"
+            }
+        ]
+    }
+}
