@@ -44,6 +44,22 @@
                 "icon": "",
                 "text": "Contact"
             }
+        ],
+        "homePageContent":[
+            {
+                "bannerItem" :[
+                    {
+                        "id": "1",
+                        "name": "Banner1",
+                        "description": "some lorem ipsum data"
+                    },
+                    {
+                        "id": "2",
+                        "name": "Banner2",
+                        "description": "lorem ipsum dummy data"
+                    }
+                ]
+            }
         ]
     }
 }

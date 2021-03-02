@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme)=>({
   root:{
       width: "100vw",
       height: "100vh",
-      backgroundColor: theme.palette.grey[300],
+      // backgroundColor: theme.palette.grey[300],
       padding: theme.spacing(6)
   }
 }))
