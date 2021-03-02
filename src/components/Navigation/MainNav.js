@@ -4,11 +4,9 @@ import {
     List,
     ListItem,
     ListItemText,
-    makeStyles,
-    Link,
-    Button
+    makeStyles
   } from '@material-ui/core';
-
+import {Link} from 'react-router-dom';
 import data from '../../data/Content.json';
 
 const content = data.sssContent;
@@ -66,22 +64,22 @@ const useStyle = makeStyles(theme => ({
 export default function MainNav(){
     const classes = useStyle();
     return(
-        <React.Fragment>
-            <nav className="main-nav">
-                <List>
-                    {content.mainNavigation.map((page, i) => {
-                        return (
-                            <ListItem className={classes.listItems} key={page.id}>
-                                <Link href={'/' + page.text} className={classes.link}>
-                                    <ListItemText classes={{ primary: classes.listItemText }}>
-                                        {page.text}
-                                    </ListItemText>
-                                </Link>
-                            </ListItem>
-                        )
-                    })}
-                </List>
-            </nav>
-        </React.Fragment>
+      <React.Fragment>
+        <nav className="main-nav">
+          <List>
+            {content.mainNavigation.map((page, i) => {
+              return (
+                <ListItem className={classes.listItems} key={page.id}>
+                  <Link href={'/' + page.text} className={classes.link} to={'/'+page.text}>
+                    <ListItemText classes={{ primary: classes.listItemText }}>
+                      {page.text}
+                    </ListItemText>
+                  </Link>
+                </ListItem>
+              )
+            })}
+          </List>
+        </nav>
+      </React.Fragment>
     )
 }
