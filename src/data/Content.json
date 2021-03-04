@@ -43,6 +43,11 @@
                 "id": 4,
                 "icon": "",
                 "text": "Contact"
+            },
+            {
+                "id": 5,
+                "icon": "",
+                "text": "Contact2"
             }
         ],
         "homePageContent":[
@@ -60,6 +65,7 @@
                     }
                 ]
             }
+        
         ]
     }
 }

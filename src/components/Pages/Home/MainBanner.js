@@ -13,6 +13,11 @@ export default function MainBanner(props){
                 content.homePageContent.map((item, i)=>
                     <Item key={i} item={item} />
                 )
+
+                // content.homePageContent.map((bannerLength)=>
+                //     bannerLength.bannerItem.map((item, i)=>
+                //     <Item key={i} item={item} />
+                // ))
             }
         </Carousel>
     )
