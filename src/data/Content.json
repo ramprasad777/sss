@@ -43,18 +43,25 @@
                 "id": 4,
                 "icon": "",
                 "text": "Contact"
+            },
+            {
+                "id": 5,
+                "icon": "",
+                "text": "Contact2"
             }
         ],
         "homePageContent":[
             {
-                "SlidingBanner":[
+                "bannerItem" :[
                     {
-                        "name": "Banner 1",
-                        "description": "Lorem ipsum some text 1"
+                        "id": "1",
+                        "name": "Banner1",
+                        "description": "some lorem ipsum data"
                     },
                     {
-                        "name": "Banner 2",
-                        "description": "Hello world"
+                        "id": "2",
+                        "name": "Banner2",
+                        "description": "lorem ipsum dummy data"
                     }
                 ]
             }
