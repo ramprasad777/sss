@@ -44,6 +44,32 @@
                 "icon": "",
                 "text": "Contact"
             }
+        ],
+        "homePageContent":[
+            {
+                "SlidingBanner":[
+                    {
+                        "name": "Banner 1",
+                        "description": "Lorem ipsum some text 1"
+                    },
+                    {
+                        "name": "Banner 2",
+                        "description": "Hello world"
+                    }
+                ]
+            }
+        ],
+        "SlidingBanner":[
+            {
+                "name": "Banner 1",
+                "description": "Lorem ipsum some text 1",
+                "imgUrl": "https://cdn.pixabay.com/photo/2016/05/04/07/53/display-dummy-1370972_960_720.jpg"
+            },
+            {
+                "name": "Banner 2",
+                "description": "Hello world",
+                "imgUrl": "https://eppeok.guru/wp-content/uploads/2019/12/main-bg.jpg"
+            }
         ]
     }
 }
