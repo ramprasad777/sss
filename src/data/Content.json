@@ -77,6 +77,16 @@
                 "description": "Hello world",
                 "imgUrl": "https://eppeok.guru/wp-content/uploads/2019/12/main-bg.jpg"
             }
+        ],
+        "AboutPage":[
+            {
+                "mainContent":[
+                    {
+                        "id":"1",
+                        "content": "Lorem ipsums is simply dummy text"
+                    }
+                ]
+            }
         ]
     }
 }
