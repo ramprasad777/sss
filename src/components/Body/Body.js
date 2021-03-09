@@ -3,7 +3,7 @@ import {Route} from 'react-router-dom';
 import {Container, makeStyles} from '@material-ui/core';
 import Home from '../Pages/Home/Home';
 import Services from '../Pages/Services/Services';
-import About from '../Pages/About/About';
+import {About, customTabs} from '../Pages/About/About';
 import Contact from '../Pages/Contact/Contact';
 
 

@@ -3,34 +3,12 @@ import {
     Toolbar,
     Typography,
     makeStyles,
-    Button,
     IconButton,
-    Drawer,
-    Link,
-    MenuItem,
+    Drawer
   } from "@material-ui/core";
   import MenuIcon from "@material-ui/icons/Menu";
   import React, { useState, useEffect } from "react";
-  import { Link as RouterLink } from "react-router-dom";
-  
-  const headersData = [
-    {
-      label: "Listings",
-      href: "/listings",
-    },
-    {
-      label: "Mentors",
-      href: "/mentors",
-    },
-    {
-      label: "My Account",
-      href: "/account",
-    },
-    {
-      label: "Log Out",
-      href: "/logout",
-    },
-  ];
+  import MainNav from '../Navigation/MainNav';
   
   const useStyles = makeStyles(() => ({
     header: {
@@ -47,12 +25,6 @@ import {
       color: "#FFFEFE",
       textAlign: "left",
     },
-    menuButton: {
-      fontFamily: "Open Sans, sans-serif",
-      fontWeight: 700,
-      size: "18px",
-      marginLeft: "38px",
-    },
     toolbar: {
       display: "flex",
       justifyContent: "space-between",
@@ -63,7 +35,7 @@ import {
   }));
   
   export default function Header() {
-    const { header, logo, menuButton, toolbar, drawerContainer } = useStyles();
+    const { header, logo, toolbar, drawerContainer } = useStyles();
   
     const [state, setState] = useState({
       mobileView: false,
@@ -129,21 +101,9 @@ import {
     };
   
     const getDrawerChoices = () => {
-      return headersData.map(({ label, href }) => {
-        return (
-          <Link
-            {...{
-              component: RouterLink,
-              to: href,
-              color: "inherit",
-              style: { textDecoration: "none" },
-              key: label,
-            }}
-          >
-            <MenuItem>{label}</MenuItem>
-          </Link>
-        );
-      });
+      return(
+        <MainNav />
+      )
     };
   
     const femmecubatorLogo = (
@@ -153,21 +113,9 @@ import {
     );
   
     const getMenuButtons = () => {
-      return headersData.map(({ label, href }) => {
-        return (
-          <Button
-            {...{
-              key: label,
-              color: "inherit",
-              to: href,
-              component: RouterLink,
-              className: menuButton,
-            }}
-          >
-            {label}
-          </Button>
-        );
-      });
+      return(
+        <MainNav />
+      )
     };
   
     return (
