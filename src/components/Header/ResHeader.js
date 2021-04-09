@@ -31,6 +31,12 @@ import {
     },
     drawerContainer: {
       padding: "20px 30px",
+      '& li': {
+        display:"block",
+        '& a':{
+          color:"#000"
+        }
+      }
     },
   }));
   
@@ -108,7 +114,7 @@ import {
   
     const femmecubatorLogo = (
       <Typography variant="h6" component="h1" className={logo}>
-        Femmecubator
+        SSS
       </Typography>
     );
   

@@ -5,6 +5,8 @@ import Home from '../Pages/Home/Home';
 import Services from '../Pages/Services/Services';
 import {About, customTabs} from '../Pages/About/About';
 import Contact from '../Pages/Contact/Contact';
+import CustomTab from '../Pages/Contact/CustomTabs';
+
 
 
 const useStyles = makeStyles((theme)=>({
@@ -28,6 +30,7 @@ export default function Body(){
                 <Route exact path="/about" component={About} />
                 <Route exact path="/services" component={Services} />
                 <Route exact path="/contact" component={Contact} />
+                <Route exact path="/contact2" component={CustomTab} />
             </div>  
         </Container>
         </>

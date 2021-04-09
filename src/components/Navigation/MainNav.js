@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './main-nav.scss';
 import {
     List,
@@ -68,7 +68,14 @@ const useStyle = makeStyles(theme => ({
   }
 }));
 export default function MainNav(){
+  const [state, setState] = useState({
+    drawerOpen: false,
+  });
   const classes = useStyle();
+
+  const handleDrawerClose = () => {
+    alert('clicked');
+  }
   return(
     <React.Fragment>
       <nav className={'main-nav' + classes.sectionDesktop}>
@@ -76,7 +83,7 @@ export default function MainNav(){
           {content.mainNavigation.map((page, i) => {
             return (
               <ListItem className={classes.listItems} key={page.id}>
-                <Link to={'/' + page.text} className={classes.link}>
+                <Link to={'/' + page.text} className={classes.link} onClick={handleDrawerClose}>
                   <ListItemText classes={{ primary: classes.listItemText }}>
                     {page.text}
                   </ListItemText>

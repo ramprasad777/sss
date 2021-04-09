@@ -2,12 +2,14 @@
 import './App.css';
 import Footer from './components/Footer/Footer';
 // import Header from './components/Header/Header';
-import Header from './components/Header/ResHeader';
+// import Header from './components/Header/ResHeader';
+import MainHeader from './components/Header/MainHeader';
 
 import { AppBar, Grid} from '@material-ui/core';
 
 import {BrowserRouter as Router} from 'react-router-dom';
 import Body from './components/Body/Body';
+
 
 function App() {
   return (
@@ -20,7 +22,8 @@ function App() {
             </Grid>
           </AppBar> */}
           <AppBar>
-            <Header />
+            {/* <Header /> */}
+            <MainHeader />
           </AppBar>
           <Body />
           <Footer />
