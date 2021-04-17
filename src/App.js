@@ -3,7 +3,8 @@ import './App.css';
 import Footer from './components/Footer/Footer';
 // import Header from './components/Header/Header';
 // import Header from './components/Header/ResHeader';
-import MainHeader from './components/Header/MainHeader';
+// import MainHeader from './components/Header/MainHeader';
+import Header from './components/Header/NewHeader';
 
 import { AppBar, Grid} from '@material-ui/core';
 
@@ -22,8 +23,8 @@ function App() {
             </Grid>
           </AppBar> */}
           <AppBar>
-            {/* <Header /> */}
-            <MainHeader />
+            <Header />
+            {/* <MainHeader /> */}
           </AppBar>
           <Body />
           <Footer />
