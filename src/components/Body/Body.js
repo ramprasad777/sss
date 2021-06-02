@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme)=>({
     root:{
         width: "100%",
         // backgroundColor: theme.palette.grey[300],
-        padding: theme.spacing(6)
+        padding: theme.spacing(8)
     },
     bodyPanel:{
         textAlign:"left"
